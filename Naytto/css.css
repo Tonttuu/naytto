@@ -1,0 +1,532 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container{
+  height: auto;
+}
+
+.navbar{
+  display: block;
+  max-width: 100%;
+  float: none;
+  background-color: #b1ed97;
+  font-family: 'Raleway', sans-serif;
+  padding: 5px;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+.navbar::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.navbar a{
+  float: left;
+  font-size: 20px;
+  color: #707070;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  padding-right: 33px;
+  padding-left: 33px;
+}
+
+.navbar img{
+  width: 25px;
+  height: 20px;
+  margin-left: -33px;
+  margin-right: -33px;
+
+}
+
+.navbar ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navbar ul li{
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+#logbutton {
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+#aktiivinen > a {
+  background-color: #66cc6b;
+  border-radius: 5px;
+}
+
+#dropdown #aktiivinen > a {
+  background-color: #66cc6b;
+  border-radius: 5px;
+}
+
+#dropdown{
+  position: absolute;
+  z-index: 10;
+  width: auto;
+  white-space: nowrap;
+  display: none;
+  top: 100%;
+  font-weight: normal;
+}
+
+#dropdown a{
+  color: grey;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: #b1ed97;
+}
+
+#dropdown li{
+  width: 100%;
+}
+
+#dropdown li a{
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+#dropdown a:hover{
+  background-color: #d5f2c6;
+  border-right: solid #b1ed97 1px;
+  border-left: solid #b1ed97 1px;
+}
+
+#dropdown li:last-child a:hover{
+  border-bottom: solid #b1ed97 1px;
+}
+
+.navbar li:hover #dropdown{
+  display: block;
+}
+
+body{
+  background-color: #d5f2c6;
+}
+
+h2{
+  margin-top: 75px;
+}
+
+#news{
+  border: solid 2px #b1ed97;
+  color: #707070;
+  text-align: center;
+  width: 300px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 1px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#h3 h3{
+  color: black;
+  text-shadow: 2px 2px 4px #707070;
+  text-align: center;
+  width: 300px;
+  display: block;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+#newscontainer{
+  width: 300px;
+  float: left;
+  display: block;
+  margin-top: 175px;
+  font-weight: lighter;
+}
+
+#tervetuloa{
+  margin-top: 50px;
+  width: 50%;
+  margin-left: 25%;
+  display: block;
+  font-size: 36px;
+  text-align: center;
+  color: #707070;
+}
+
+#tervetuloa h2{
+  color: black;
+  text-shadow: 2px 2px 4px #707070;
+}
+
+#myymalat h2{
+  display: block;
+  width: 100%;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 4px #707070;
+  font-size: 36px;
+  font-weight: lighter;
+  margin-top: 150px;
+}
+
+#myymalat #helsinki{
+  display: block;
+  width: 20%;
+  margin-right: 25%;
+  float: right;
+  text-align: left;
+  color: #707070;
+  font-size: 20px;
+}
+
+#myymalat #espoo{
+  display: block;
+  width: 20%;
+  margin-left: 30%;
+  color: #707070;
+  text-align: left;
+  float: left;
+  font-size: 20px;
+}
+
+#tietoa{
+  display: block;
+  width: 35%;
+  margin-left: 10%;
+  color: #707070;
+  float: left;
+  text-align: left;
+  font-size: 20px;
+}
+
+#tietoa h2{
+  display: block;
+  width: 100%;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 4px #707070;
+  font-size: 36px;
+  font-weight: lighter;
+  margin-top: 200px;
+}
+
+#historia{
+  display: block;
+  width: 35%;
+  margin-right: 10%;
+  color: #707070;
+  float: right;
+  text-align: left;
+  font-size: 20px;
+}
+
+#historia h2{
+  display: block;
+  width: 100%;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 4px #707070;
+  font-size: 36px;
+  font-weight: lighter;
+  margin-top: 200px;
+}
+
+#info{
+  display: block;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  float: left;
+  text-align: left;
+  font-size: 24px;
+  margin-top: 100px;
+}
+
+#info li{
+  list-style-type: circle;
+}
+
+#info p{
+  color: black;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #707070;
+
+}
+
+#lomake{
+  float: left;
+  display: block;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: left;
+  font-size: 18px;
+  border: solid 2px #707070;
+  border-radius: 5px;
+  background-color: #b1ed97;
+}
+
+#lomake2 {
+  margin-top: 175px;
+}
+
+#lomake fieldset{
+  border: none;
+}
+
+#lomake input[type=text], select, textarea, input[type=password], input[type=email] {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 3px;
+  border: solid 1px #707070;
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding: 4px;
+  resize: none;
+}
+
+#lomake input[type=radio]{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#lomake input[type=submit]{
+  float: right;
+  margin-right: 15%;
+  font-size: 20px;
+  border: solid 1px #707070;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+#Tuotteetotsikko h2{
+  display: block;
+  width: 100%;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 4px #707070;
+  font-size: 48px;
+  font-weight: lighter;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+#tuotteet{
+  display: block;
+  float: left;
+  height: 100%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #b1ed97;
+  border: solid 2px #707070;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.kasvikategoria{
+  display: block;
+  float: left;
+  margin: 8px;
+  padding: 3px;
+  height: 300px;
+  width: 300px;
+  min-height: 225px;
+  min-width: 300px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #b1ed97;
+}
+
+.kasvikategoria a, .tuote a{
+  text-decoration: none;
+  color: black;
+}
+
+.kasvikategoria img{
+  max-width: 290px;
+  max-height: 200px;
+  border: solid 1px #707070;
+  border-radius: 3px;
+}
+
+#tuotealue{
+  display: block;
+  float: left;
+  height: 100%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #b1ed97;
+  border: solid 2px #707070;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.tuote{
+  display: block;
+  float: left;
+  margin: 8px;
+  padding: 3px;
+  height: 300px;
+  width: 300px;
+  min-height: 225px;
+  min-width: 300px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #b1ed97;
+  margin-bottom: 30px;
+}
+
+.tuote img{
+  max-width: 290px;
+  max-height: 180px;
+  border: solid 1px #707070;
+  border-radius: 3px;
+}
+
+#hinta{
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.tuote button{
+  border: solid 1px black;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 3px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10px;
+  float: left;
+  width: 40%;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.tuote button:hover{
+  cursor: pointer;
+  background-color: #e2e2e2;
+}
+
+#sisakasviotsikko h2{
+  display: block;
+  width: 100%;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 4px #707070;
+  font-size: 48px;
+  font-weight: lighter;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+#tuote{
+  display: block;
+  float: left;
+  height: 100%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #b1ed97;
+  border: solid 2px #707070;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+}
+
+#hinta2{
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+#tuote input[type=submit]{
+  border: 1px solid #707070;
+  border-radius: 5px;
+  font-size: 36px;
+  margin-top: 15px;
+  color: black;
+  background-color: #f2f2f2;
+}
+
+#tuote input[type=submit]:hover{
+  background-color: #e2e2e2;
+  cursor: pointer;
+}
+
+#tuote img{
+  border: solid 1px #707070;
+  border-radius: 3px;
+}
+
+.tilausnappi button{
+  border: solid 1px black;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 3px;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 10px;
+  float: left;
+  width: 30%;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.tilausnappi button:hover{
+  cursor: pointer;
+  background-color: #e2e2e2;
+}
+
+#search{
+  float: left;
+  font-size: 20px;
+  color: #707070;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+#search input[type=text] {
+  float: left;
+  font-size: 20px;
+  border: solid 1px #707070;
+  border-radius: 3px;
+  margin-top: 3px;
+  width: 70%;
+  margin-left: 20px;
+  color: #707070;
+  padding: 3px;
+}
+
+#search input[type=submit]{
+  float: right;
+  font-size: 20px;
+  border: solid 1px #707070;
+  border-radius: 3px;
+  margin-top: 3px;
+  width: 20%;
+  padding: 3px;
+}
