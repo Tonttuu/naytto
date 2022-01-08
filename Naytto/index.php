@@ -45,8 +45,7 @@
 
   <div id="tervetuloa">
    <h2>Tervetuloa Puutarhaliike Neilikan kotisivuille! </h2>
-    <p>  Meiltä löydät sekä sisä- että ulkokasvit ja kaiken tarvitsemasi kasvien hoitoon.
-    </p>
+    <p>  Meiltä löydät sekä sisä- että ulkokasvit ja kaiken tarvitsemasi kasvien hoitoon.</p>
   </div>
 
   <article id="cc-slider">

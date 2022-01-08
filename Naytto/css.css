@@ -51,13 +51,13 @@
 }
 
 .navbar ul li{
-  display: inline-block;
+  display: block;
   float: left;
   position: relative;
 }
 
 #logbutton {
-  display: inline-block;
+  display: block;
   float: right;
   position: relative;
 }
