@@ -79,7 +79,7 @@
           </article>
           <article>
             <div class="cctooltip">
-              <h3>Fiskars classic lapio</h3>
+              <h3>Fiskars classic Lapio</h3>
               <h4><a href="kaktus.php">Tuotesivulle</a></h4>
             </div>
             <img src="images/lapio.jpg">
